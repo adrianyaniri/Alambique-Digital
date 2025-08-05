@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    /* Type Checking */
+    "strict": true, // Habilita todas las opciones de chequeo estricto de tipos. Es la mejor práctica.
+    "noImplicitAny": true, // Exige que todas las variables tengan un tipo definido.
+
+    /* Modules */
+    "module": "commonjs", // El sistema de módulos que usa Node.js. NestJS lo necesita.
+    "esModuleInterop": true, // Permite la compatibilidad entre distintos tipos de módulos.
+    "resolveJsonModule": true, // Permite importar archivos .json como si fueran módulos.
+
+    /* Emit */
+    "outDir": "dist", // Carpeta donde se guardará el código JavaScript compilado.
+    "sourceMap": true, // Genera 'mapas' que nos ayudan a depurar el código TypeScript original en producción.
+
+    /* Language and Environment */
+    "target": "ES2021", // Le decimos que compile a una versión moderna de JavaScript. Puedes usar "ESNext" para ir siempre a la última.
+    "lib": ["esnext"], // Incluye las definiciones de las últimas características de JavaScript.
+
+    /* Other */
+    "skipLibCheck": true, // Evita que TypeScript revise los tipos de las librerías de terceros (acelera la compilación).
+    "forceConsistentCasingInFileNames": true, // No permite importar un archivo con un nombre en mayúsculas/minúsculas distinto al real.
+    "baseUrl": ".", // Le dice al compilador que la raíz para las importaciones es el directorio actual.
+  }
+}
