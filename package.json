@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint \"apps/**/*.{ts,tsx}\""
+    "lint": "eslint \"apps/**/*.{ts,tsx}\" --no-error-on-unmatched-pattern"
   },
   "keywords": [],
   "author": "",
