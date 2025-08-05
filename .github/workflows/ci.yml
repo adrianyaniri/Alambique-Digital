@@ -21,5 +21,14 @@ jobs:
           cache: 'pnpm'
       - name: Install dependencies
         run: pnpm install
+      - name: List files in root # NUEVO PASO DE DEPURACIÓN 1
+        run: ls -la
+            # Este comando nos mostrará una lista de todos los archivos en la carpeta raíz del proyecto.
+            # Así confirmamos que package.json está donde esperamos.
+
+      - name: Display package.json content # NUEVO PASO DE DEPURACIÓN 2
+        run: cat package.json
+              # Este comando imprimirá en la consola el contenido EXACTO del archivo package.json.
+              # Esta es la prueba definitiva.
       - name: Run ESLint
         run: pnpm run lint
